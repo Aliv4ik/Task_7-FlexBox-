@@ -1,0 +1,108 @@
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none;
+
+}
+.hide + label ~ div{
+    display: none;
+
+}
+/* оформляем текст label */
+.hide + label {
+  border-bottom: 1px dotted #5B2333;
+    padding: 0;
+    color: #5B2333;
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #564D4A;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    background: #F7F4F3;
+    -moz-box-shadow: inset 3px 3px 10px #5B2333;
+    -webkit-box-shadow: inset 3px 3px 10px #5B2333;
+    box-shadow: inset 3px 3px 10px #5B2333;
+    padding: 10px;
+    text-align: center;
+      }
+
+/* demo контейнер */
+.demo {
+    margin: 5% 10%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #BA1B1D;
+}
+.nav {
+  min-height: 40px;
+  background-color: #5B2333;
+  text-align: center;
+  padding: 3px;
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  flex-flow: row;
+  color: #F7F4F3;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+}
+.menu li {
+  padding: 10px;
+}
+.name {
+  display: block;
+  margin-right: auto;
+}
+header{
+  padding-top: 40px;
+  width: 100;
+  height: 350px;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/928212888887903982/5C135F690B1EA8EDAB082BABAF23C2CA94D43046/?imw=512&amp;imh=146&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
+  background-size: cover;
+  text-align: center;
+  color: #F7F4F3;
+  }
+header img {
+  border-radius: 50%;
+  border: 2px solid #F7F4F3;
+  width: 170px;
+  height: 170px;
+  transition: all .5s;
+  di
+  }
+header img:hover{
+transform: scale(1.1) rotate(360deg);
+}
+.card {
+  max-width: 500px;
+  margin: 10px;
+  padding: 50px;
+  text-align: center;
+  border: 3px solid #564D4A;
+  border-radius: 10px;
+  color: #5B2333;
+}
+footer{
+  text-align: center;
+  padding: 15px;
+}
+.Task {
+  display: flex;
+justify-content: center;
+}
