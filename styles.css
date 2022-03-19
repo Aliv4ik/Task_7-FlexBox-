@@ -1,11 +1,9 @@
 /* скрываем чекбоксы и блоки с содержанием */
 .hide {
     display: none;
-
 }
 .hide + label ~ div{
     display: none;
-
 }
 /* оформляем текст label */
 .hide + label {
@@ -16,12 +14,12 @@
     display: inline-block;
     display: flex;
     justify-content: center;
-}
+    }
 /* вид текста label при активном переключателе */
 .hide:checked + label {
     color: #564D4A;
     border-bottom: 0;
-}
+    }
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
     display: block;
@@ -31,12 +29,12 @@
     box-shadow: inset 3px 3px 10px #5B2333;
     padding: 10px;
     text-align: center;
-      }
+    }
 
 /* demo контейнер */
 .demo {
     margin: 5% 10%;
-}
+  }
 body {
   margin: 0;
   padding: 0;
@@ -84,10 +82,11 @@ header img {
   width: 170px;
   height: 170px;
   transition: all .5s;
-  di
+  margin-top: 30px;
+    margin-left: 23px;
   }
 header img:hover{
-transform: scale(1.1) rotate(360deg);
+transform: scale(1.25) rotate(360deg);
 }
 .card {
   max-width: 500px;
